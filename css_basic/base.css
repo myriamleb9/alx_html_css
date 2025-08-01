@@ -198,3 +198,29 @@ h6 {
   	float: none;
   }
 }
+/* === Flexbox Layout === */
+
+/* Make the body a flex container with column layout */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the main area a flex container with row layout */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* keeps automatic height and width */
+}
+
+/* Article takes 2/3 of the width */
+article {
+    flex: 2;
+    overflow-y: auto; /* allow scrolling */
+}
+
+/* Aside takes 1/3 of the width */
+aside {
+    flex: 1;
+    overflow-y: auto; /* allow scrolling */
+}
