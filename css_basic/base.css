@@ -224,3 +224,79 @@ aside {
     flex: 1;
     overflow-y: auto; /* allow scrolling */
 }
+
+/* === Custom Styling (Allowed Section) === */
+
+/* Body background and general font */
+body {
+    background: #fafafa;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Header customization */
+header {
+    background: #222;
+    color: white;
+    border-bottom: 3px solid #F80002;
+    padding: 15px 20px;
+}
+
+/* Header links */
+header a {
+    color: white;
+    font-weight: bold;
+}
+header a:hover {
+    color: #F80002;
+}
+
+/* Logo styling (using the class ALX provided) */
+header .logo {
+    font-size: 40px;
+    color: #F80002;
+    margin-right: 20px;
+}
+
+/* Article section: custom background & text */
+article {
+    background: white;
+    border-right: 2px solid #ddd;
+    padding: 30px;
+    line-height: 1.6;
+}
+
+/* Article headings */
+article h1, article h2 {
+    color: #F80002;
+}
+
+/* Aside section */
+aside {
+    background: #f3f3f3;
+    padding: 30px;
+}
+
+/* Aside content boxes */
+aside p {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Footer styling */
+footer {
+    background: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Links general style */
+a {
+    transition: color 0.3s ease;
+}
+
+/* Mobile-friendly tweaks already handled by .works_on_smartphone */
