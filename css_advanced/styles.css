@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #0d0d1f;
+  padding: 20px 50px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+nav a { color: white; text-decoration: none; font-weight: bold; }
+
+/* HERO */
+.hero {
+  text-align: center;
+  background: linear-gradient(#000000a0,#000000a0), url('https://images.unsplash.com/photo-1506794778202-cad84cf45f1d') center/cover;
+  color: white;
+  padding: 100px 20px;
+}
+.hero .tags span { margin: 0 10px; font-weight: bold; }
+.btn { background:#c271ff; border:none; color:white; padding:10px 30px; border-radius:20px; margin-top:20px; cursor:pointer; }
+
+/* PROS */
+.pros { background:#1f1f2e; color:white; text-align:center; padding:60px 20px; }
+.pros-grid { display:flex; justify-content:center; gap:40px; flex-wrap:wrap; }
+.pro img { width:150px; height:150px; border-radius:50%; border:3px solid #c271ff; }
+
+/* TESTIMONIAL */
+.testimonial { display:flex; align-items:center; gap:40px; background:#c271ff; color:white; padding:40px; }
+.testimonial img { width:200px; border-radius:2000px; }
+
+/* VIDEOS */
+.videos { padding:60px 20px; text-align:center; }
+.video-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+.video-card img { width:50%; border-radius:1000px; }
+
+/* MEMBERSHIP */
+.membership { background:#1f1f2e; color:white; text-align:center; padding:60px 20px; }
+.membership-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:30px; }
+.membership-grid img { width:60px; }
+
+/* FAQ */
+.faq { padding:60px 20px; }
+.faq-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+
+/* FOOTER */
+footer { background:#0d0d1f; color:white; text-align:center; padding:30px 20px; }
+.socials i { margin:0 10px; font-size:20px; cursor:pointer; }
