@@ -1,0 +1,29 @@
+/* Center the content with max width */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Responsive rule: mobile layout for ≤ 480px */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Adjust layout for mobile here */
+}
+
+/* Link interaction */
+a:hover,
+a:active {
+  color: #FF6565;
+}
+
+/* Button interaction */
+button:hover,
+button:active {
+  opacity: 0.9;
+}
