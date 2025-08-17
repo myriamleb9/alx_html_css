@@ -2,13 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Headphones</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Headphones Landing Page</title>
+  <link rel="stylesheet" href="holberton_school-icon.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- PAGE CONTENT HERE -->
+  <!-- Header + Hero -->
+  <header class="header">
+    <div class="container nav-bar">
+      <img src="images/logo_headphones.png" alt="Headphones Logo" class="logo">
+      <div class="hamburger" id="hamburger">☰</div>
+      <nav class="nav" id="nav">
+        <a href="#what-we-do">What we do</a>
+        <a href="#our-results">Our results</a>
+        <a href="#contact">Contact us</a>
+      </nav>
+    </div>
 
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Lorem ipsum dolor sit amet lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+        <button>Call to Action</button>
+      </div>
+    </section>
+  </header>
+
+  <!-- What We Do -->
+  <section class="what-we-do" id="what-we-do">
+    <div class="container">
+      <h2>What we do…</h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+      <div class="features">
+        <div class="feature">
+          <i class="holberton_school-icon-ic_sound"></i>
+          <h3>Sound</h3>
+          <p>High-quality audio engineering and tuning for crystal-clear sound.</p>
+        </div>
+        <div class="feature">
+          <i class="holberton_school-icon-ic_music"></i>
+          <h3>Music</h3>
+          <p>Perfect companion for music lovers across genres and platforms.</p>
+        </div>
+        <div class="feature">
+          <i class="holberton_school-icon-ic_headphones"></i>
+          <h3>Headphones</h3>
+          <p>Comfortable, lightweight design with maximum noise isolation.</p>
+        </div>
+        <div class="feature">
+          <i class="holberton_school-icon-ic_microphone"></i>
+          <h3>Microphone</h3>
+          <p>Integrated mic for seamless calls and voice commands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Results -->
+  <section class="our-results" id="our-results">
+    <div class="container">
+      <h2>Our results speak for themselves</h2>
+      <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+      <div class="results-cards">
+        <div class="pentagon">
+          <span class="pentagon-content">
+            <h3>+2%</h3>
+            <p>Conversion</p>
+          </span>
+        </div>
+        <div class="pentagon">
+          <span class="pentagon-content">
+            <h3>+2%</h3>
+            <p>Retention</p>
+          </span>
+        </div>
+        <div class="pentagon">
+          <span class="pentagon-content">
+            <h3>+2%</h3>
+            <p>Engagement</p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="description">Do you have any questions? Reach out!</p>
+      <form class="contact-form" onsubmit="return validateForm();">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <img src="images/logo_headphones.png" alt="Logo" class="footer-logo">
+      <div class="social-icons">
+        <a href="#"><i class="holberton_school-icon-ic_facebook"></i></a>
+        <a href="#"><i class="holberton_school-icon-ic_twitter"></i></a>
+        <a href="#"><i class="holberton_school-icon-ic_instagram"></i></a>
+      </div>
+      <p class="footer-text">© 2024 Headphones. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for menu + validation -->
+  <script>
+    // Mobile hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+    document.querySelectorAll('#nav a').forEach(link =>
+      link.addEventListener('click', () => nav.classList.remove('show'))
+    );
+
+    // Basic contact form validation
+    function validateForm() {
+      const form = document.forms[0];
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+      if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return false;
+      }
+      alert("Form submitted successfully!");
+      return true;
+    }
+  </script>
 </body>
 </html>
